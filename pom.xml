@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mgreau.wildfly</groupId>
-	<artifactId>javaee7-websocket</artifactId>
+	<groupId>eu.augustsson.weso</groupId>
+	<artifactId>weso</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>javaee7-websocket</name>
+	<name>weso</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,7 +41,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>usopen</finalName>
+		<finalName>weso</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
