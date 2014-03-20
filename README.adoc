@@ -1,35 +1,25 @@
-= WebSocket Java EE 7 - AngularJS - WildFly 8
-Maxime Gréaun <@mgreau>
-:imagesdir: ./doc/img
+= zerojay =
 
-This project shows how to use the WebSocket Protocol with :
+Meteor for Java EE7. True zero turnaround for JEE7.
 
-* Java API for WebSocket (from Java EE 7 specifications)
-* WebSocket HTML 5 / Javascript API (from W3C)
-* AngularJS framework
-* deployed on WildFly 8.0.0-Beta1
+* Live updates of model, view and controllers
+* Optional client bindings to AngularJS
+* Optional server bindings to Hibernate
 
-== Overview == 
-There are 2 samples :
+You update an html file locally? It gets pushed to all clients
+You update an js file locally? It gets pushed to all clients
+You update an object in your database? It gets push to all clients
 
-* the first one (/index.html) which handle *just one* match and uses *only native Javascript (client-side)*
-** online demo : http://wildfly-mgreau.rhcloud.com/usopen/
-** local access : http://localhost:8080/usopen/
+The idea, anyhow, does not work so far...
 
-image::html5_websocket_simple.png[Screenshot of the WebSocket Java EE 7 demo with a single match and native JS]
-
-* the second (/live.html) which is more complicated as it handles *several matches* and it uses *AngularJS client-side solution*
-** online demo : http://wildfly-mgreau.rhcloud.com/usopen/live.html
-** local access : http://localhost:8080/usopen/live.html
-
-image::websocket_wildfly_angularjs_tennis.png[Screenshot of the WebSocket Java EE 7 demo with a severals matches and AngularJS deployed on WildFly]
+Started by merging mgreau's javaee7-websocket project with a vanilla yeoman angular projects.
 
 
 == Install on your WildFly 8 Application Server
   
 . Clone this project :  
 
-  git clone https://github.com/mgreau/javaee7-websocket
+  git clone https://github.com/jensaug/wesome
 
 . Start wildfly : 
 
