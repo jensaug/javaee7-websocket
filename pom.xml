@@ -79,6 +79,25 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
+					<webResources>
+						<resource>
+							<directory>app</directory>
+							<filtering>false</filtering>
+							<includes>
+								<include>components</include>
+								<include>lib</include>
+							</includes>								
+						</resource>
+						<resource>
+							<directory>app</directory>
+							<filtering>true</filtering>
+							<excludes>
+								<exclude>components</exclude>
+								<exclude>lib</exclude>
+								<exclude>**/*-dev.html</exclude>
+							</excludes>
+						</resource>					
+					</webResources>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
