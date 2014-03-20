@@ -14,7 +14,7 @@
 		<!-- Java EE 7 -->
 		<javaee.api.version>7.0</javaee.api.version>
 		<!-- Wildfly -->
-		<version.jboss.spec.javaee.7.0>8.0.0.Beta1</version.jboss.spec.javaee.7.0>
+		<version.jboss.spec.javaee.7.0>8.0.0.Final</version.jboss.spec.javaee.7.0>
 		<version.jboss.maven.plugin>7.4.Final</version.jboss.maven.plugin>
 
 		<!-- Maven -->
@@ -83,14 +83,11 @@
 				</configuration>
 			</plugin>
 			<!-- To deploy on Wildfly -->
-			<plugin>
-				<groupId>org.jboss.as.plugins</groupId>
-				<artifactId>jboss-as-maven-plugin</artifactId>
-				<version>${version.jboss.maven.plugin}</version>
-				<configuration>
-					<skip>false</skip>
-				</configuration>
-			</plugin>
+ 		     <plugin>
+			        <groupId>org.wildfly.plugins</groupId>
+			        <artifactId>wildfly-maven-plugin</artifactId>
+			        <version>1.0.1.Final</version>
+		      </plugin>
 		</plugins>
 	</build>
 
